@@ -12,7 +12,19 @@ $(".gnb").hover(
     }
 );
 
-var tabli = document.querySelectorAll(".tab a");
+$(".open").click(
+    function(){
+        $("#pop").show();
+    }
+);
+$(".close").click(
+    function(){
+        $("#pop").hide();
+    }
+);
+
+var tabll = document.querySelectorAll(".tab a");
+var tabli = document.querySelectorAll(".tab li");
 var notice = document.querySelector(".notice");
 var gallery = document.querySelector(".gallery");
 
@@ -21,7 +33,7 @@ window.addEventListener('click',coffee);
 function coffee(e){
     
     switch(e.target){
-        case tabli[0] :
+        case tabll[0] :
             tabli[0].classList.remove("on");
             tabli[1].classList.remove("on");
             tabli[0].classList.add("on");
@@ -31,7 +43,7 @@ function coffee(e){
             notice.classList.add("now");
         break;
             
-        case tabli[1] :
+        case tabll[1] :
             tabli[0].classList.remove("on");
             tabli[1].classList.remove("on");
             tabli[1].classList.add("on");
@@ -42,6 +54,8 @@ function coffee(e){
         break;
     }
 }
+
+
 
 
 
