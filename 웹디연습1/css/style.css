@@ -1,0 +1,208 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+a{text-decoration: none; color:inherit; display:block;}
+li{list-style: none;}
+.cf:after{content:""; clear:both; display:block;}
+
+#wrap{width:1200px; height: 700px; position:relative; margin:0 auto;}
+
+
+/* ----- header ----- */
+header{
+    width:1200px; height: 100px;
+    position:relative;
+}
+.logo{
+    width:200px; line-height: 40px;
+    padding:30px 0;
+    text-align: center;
+    font-weight:bold;
+    font-size:1.7rem;
+    float:left;
+    cursor:pointer;
+}
+.gnb{
+    width:600px; height: 40px;
+    float:left;
+    position:relative;
+    top:60px; left:280px;
+    color:#fff;
+}
+.gnb>li{
+    width:150px; line-height: 40px;
+    float:left;
+    text-align: center;
+    background:#444; 
+}
+.sub{
+    position:absolute;
+    z-index:10;
+    display:none;
+}
+.sub li{
+    width:150px; line-height: 35px;
+    text-align: center;
+    background:#555;
+}
+.gnb li:hover>a{background:#333;}
+.wing{
+    width:1200px; height: 160px;
+    background:#555;
+    position:absolute;
+    z-index:9;
+    top:100px;
+    display:none;
+}
+
+/* ----- slide ----- */
+#slide{
+    width:1200px; height: 300px;
+    position:relative;
+}
+#slide ul{
+    width:1200px; height: 300px;
+
+}
+#slide li{
+    width:1200px; line-height: 300px;
+    position:absolute;
+    font-weight:bold;
+    font-size:4rem;
+    text-align: center;
+    opacity: 0;
+}
+#slide li:nth-child(1){ animation:fade1 9s infinite; background:rgb(250,126,116);}
+#slide li:nth-child(2){ animation:fade2 9s infinite; background:rgb(150,200,200);}
+#slide li:nth-child(3){ animation:fade3 9s infinite; background:rgb(116,176,250);}
+
+@keyframes fade1{
+    0%{opacity: 0;}
+    3%{opacity: 1;}
+    30%{opacity: 1;}
+    33%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade2{
+    0%{opacity: 0;}
+    33%{opacity: 0;}
+    36%{opacity: 1;}
+    63%{opacity: 1;}
+    66%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade3{
+    0%{opacity: 0;}
+    66%{opacity: 0;}
+    69%{opacity: 1;}
+    97%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+
+/* ----- content ----- */
+#content{
+    width:1200px; height: 200px;
+    position:relative;
+}
+.c1{
+    width:380px; height: 180px;
+    padding:10px;
+    float:left;
+}
+.tab li{
+    width:120px; line-height: 35px;
+    float:left;
+    text-align: center;
+    background:#444; color:#fff;
+}
+.notice li{
+    width:380px; line-height: 36.25px;
+    background:#555; color:#fff;
+}
+.notice li span:nth-child(1){margin:0 150px 0 15px;}
+.notice li:hover{text-decoration: underline;}
+.tab li.on{background:#333;}
+.notice{display:none;}
+.notice.now{display:block;}
+.gallery{
+    width:380px; height: 145px;
+    background:#555;
+    display:none;
+}
+.gallery.now{display:block;}
+.gallery li{
+    width:100px; line-height: 100px;
+    float:left;
+    background:aliceblue;
+    text-align: center;
+    font-weight: bold;
+    color:#111;
+    margin:22.5px 13px;
+}
+.gallery li:hover{opacity: 0.7;}
+
+.banner{width:380px; height: 180px; padding:10px; float:left;}
+.b_tab{width:120px; line-height: 35px; text-align: center; background:#333; color:#fff;}
+.bbb{
+    width:360px; line-height: 125px; 
+    background:rgba(170,170,170,0.6); color:#111;
+    text-align: center;
+    font-size:3rem;
+    font-weight:bold;
+    border:10px #222 solid;
+}
+.shortcut{width:380px; height: 180px; padding:10px; float:left;}
+.s_tab{width:120px; line-height: 35px; text-align: center; background:#333; color:#fff;}
+.shortcut ul{
+    width:380px; height: 145px;
+    background:#555;
+}
+.shortcut ul li{
+    width:100px; line-height: 100px;
+    float:left;
+    background:aliceblue; color:#111;
+    text-align: center;
+    font-size:1.6rem;
+    font-weight: bold;
+    margin:22.5px 13px;
+}
+.shortcut ul li:hover{opacity: 0.6;}
+
+
+/* ----- footer ----- */
+footer{
+    width:1200px; height: 100px;
+    background:#444; color:#fff;
+    overflow: hidden;
+}
+.copy{width:800px; line-height: 100px;text-align: center;float: left;}
+.f_site{
+    width:200px; height: 100px;
+    float:left;
+}
+.f_site select{
+    width:100px; height: 30px;
+    margin:35px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
